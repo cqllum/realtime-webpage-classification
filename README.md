@@ -2,7 +2,7 @@
 
 This project is my  **Real-Time Webpage Classification and Analysis** project to demonstrate Python classification and web crawling in tandem with a real time streaming on Apache Kafka.
 
-This application leverages the Python to scrape, analyse, and classify websites in real-time. Built for scalability and efficiency, it offers a robust pipeline for understanding web content and extracting meaningful insights.
+This application leverages Python to scrape, analyse, and classify websites in real-time. Built for scalability and efficiency, it offers a robust pipeline for understanding web content and extracting meaningful insights.
 
 The application will continuously crawl new links that are picked up on pages that are sent to the queue, and new domains can be added to the crawler queue when they enter the To Process topic in Kafka.
 
