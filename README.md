@@ -42,6 +42,29 @@ Outputs:
 Data will now enter the topic, containing the full JSON structure of the processed outputs of what was scraped from the site.
 ![alt text](https://i.imgur.com/JH8rRRv.png) 
 
+#### Example JSON Outputs:
+```json
+{
+  "success": true,
+  "url": "https://www.example.com",
+  "hostname": "www.example.com",
+  "title": "Example Domain",
+  "meta_description": "No Description Found",
+  "images": [],
+  "internal_links": [
+    "link found on site.."
+  ],
+  "domain_info": "whois info here...",
+  "keywords": [
+    "keyword here..",
+  ],
+  "category": "uncategorized",
+  "description": "This site is about blablabla",
+  "legitimacy": "legitmate"
+}
+
+```
+
 #### Now what?
 The script will now endlessly crawl through links that it comes across on every web page that it discovers. It will only crawl a page once per run time, as it adds the domains to a list within the runtime of the application.
 
@@ -56,7 +79,10 @@ To get started with this project, follow the steps below:
 - [Apache Kafka](https://kafka.apache.org/) (or access to a Kafka cloud service like Confluent Cloud)
 - Required Python packages (install via `pip`)
 
+#### Installsation
 ```bash
+git clone https://github.com/cqllum/realtime-webpage-classification.git
+cd realtime-webpage-classification
 pip install -r requirements.txt
 ```
 
@@ -114,6 +140,7 @@ This crawling mechanism enhances the application's ability to gather comprehensi
 ```json
 {'domain': 'example.com'}
 ```
+
 
 
 ## TLDR
