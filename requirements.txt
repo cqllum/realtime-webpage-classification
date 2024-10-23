@@ -1,0 +1,8 @@
+beautifulsoup4
+confluent-kafka
+requests
+nltk
+scikit-learn
+whois
+wordcloud
+matplotlib

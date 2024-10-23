@@ -1,0 +1,12 @@
+{
+    "kafka": {
+        "brokers": ["broker:9092"],
+        "pending_topic": "domains_pending_analysis",
+        "completed_topic": "domains_completed_analysis",
+        "security_protocol": "SASL_SSL",
+        "sasl_mechanisms": "PLAIN",
+        "sasl_username": "SECRET_USERNAME_HERE",
+        "sasl_password": "SECRET_PASSWORD_HERE",
+        "session_timeout_ms": 45000
+    }
+}
