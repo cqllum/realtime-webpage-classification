@@ -131,15 +131,33 @@ This crawling mechanism enhances the application's ability to gather comprehensi
 
 `Source Topic` - **domains_pending_analysis** - The queue of domains that will be processed. Input values are JSON Format as follows:
 ```json
-{'domain': 'example.com'}
+{"domain": "example.com"}
 ```
 
 `Consumer Group` - **domain-monitor-group** - This is the consumer group that is listening to the Source Topic.
 
 `Processed Topic` - **domains_completed_analysis** - The finalised output of domains that have been processed.
-```json
-{'domain': 'example.com'}
-```
+```json 
+{
+  "success": true,
+  "url": "https://www.example.com",
+  "hostname": "www.example.com",
+  "title": "Example Domain",
+  "meta_description": "No Description Found",
+  "images": [],
+  "internal_links": [
+    "link found on site.."
+  ],
+  "domain_info": "whois info here...",
+  "keywords": [
+    "keyword here..",
+  ],
+  "category": "uncategorized",
+  "description": "This site is about blablabla",
+  "legitimacy": "legitmate"
+}
+
+``` 
 
 
 
